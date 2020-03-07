@@ -342,10 +342,6 @@ template {
   max-width: 1256px;
   margin: auto; }
 
-.block {
-  -webkit-animation: show 2s ease 2s ininite;
-  animation: show 2s ease 2s ininite; }
-
 body {
   font-family: sans-serif;
   font-size: 14px; }
