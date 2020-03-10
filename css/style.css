@@ -555,16 +555,6 @@ img {
   padding: 1.214rem 2.6rem;
   font-weight: normal; }
 
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 8rem; }
-  .card__text {
-    margin-left: 0; } }
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: 10px; }
@@ -597,6 +587,7 @@ img {
   .contacts__button {
     display: none; }
   .title {
+    width: 18rem;
     font-size: 1.64rem; }
   .hero__scroll-down {
     display: none; }
@@ -609,9 +600,7 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
-  .hero__title {
-    max-width: 18rem; } }
+    margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
