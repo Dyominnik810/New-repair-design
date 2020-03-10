@@ -355,6 +355,9 @@ body {
   font-size: 1rem;
   font-family: 'Futura book', sans-serif; }
 
+img {
+  max-width: 100%; }
+
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -425,7 +428,7 @@ body {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 0rem; }
+    margin-left: 2.75rem; }
   .hero__instagram {
     left: 0;
     top: 0;
@@ -501,6 +504,67 @@ body {
   .title--primary {
     color: #E3B873; }
 
+.types__section-title {
+  margin-bottom: 2.2rem; }
+
+.types .section-title__heading {
+  margin-bottom: 1rem;
+  font-size: 1.43rem;
+  line-height: 2rem; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -8.7rem;
+  padding: 0.6rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem;
+  margin-bottom: 0.37rem; }
+
+.card__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  font-size: 1.07rem;
+  line-height: 1.9rem;
+  color: #959595;
+  margin-bottom: 2.5rem; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -2.7rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.214rem 2.6rem;
+  font-weight: normal; }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 8rem; }
+  .card__text {
+    margin-left: 0; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 10px; }
@@ -513,6 +577,16 @@ body {
   .hero__instagram {
     display: none; }
   .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 8rem; }
+  .card__text {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
@@ -530,11 +604,14 @@ body {
     min-width: 22.86rem; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    max-width: 28rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .hero__title {
+    max-width: 18rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

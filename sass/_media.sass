@@ -12,6 +12,17 @@
             display: none
         &__content
             margin-left: 0
+@media screen and ( max-width: 760px)
+    .row
+        flex-direction: column 
+        justify-content: center
+        align-items: center
+    .types
+        &__card       
+            margin-bottom: 8rem
+    .card
+        &__text
+            margin-left: 0
 @media screen and ( max-width: 570px)
     .contacts
         &__phone
@@ -30,13 +41,17 @@
         &__text
             font-size: 1.29rem
             margin-bottom: 2.28rem
+            max-width: 28rem
         &__button
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+        &__title
+            max-width: 18rem
 @media screen and ( max-height: 520px  )
     .hero
         &__scroll-down
             display: none
+        
     
     
