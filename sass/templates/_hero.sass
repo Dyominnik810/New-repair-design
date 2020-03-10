@@ -1,5 +1,5 @@
 .hero
-    padding-top: 100px
+    padding-top: 56px
     position: relative
     display: flex
     justify-content: center
@@ -19,7 +19,7 @@
     &__content
         position: relative
         max-width: 47.85rem
-        margin-left: 4.28rem
+        margin-left: 0rem
 
     &__instagram
         left: 0
@@ -29,6 +29,7 @@
         position: absolute   
 
     &__scroll-down
+        font-family: 'Yeseva One', cursive
         display: flex
         justify-content: center
         align-items: center
@@ -41,6 +42,8 @@
         text-decoration: none
         text-transform: uppercase
         color: $light
+        font-size: 0.85rem
+        text-align: justify
         &::after
             content: ''
             background: url(../img/Vector.svg) no-repeat center
@@ -48,7 +51,7 @@
             height: 30px
             border: 2px solid $primary
             border-radius: 50%
-            margin-left: 12px
+            margin-left: 18px
    
     &__text
         font-size: 1.57rem
@@ -56,10 +59,14 @@
         line-height: 1.4
         margin-top: 0
         margin-left: 0
-        margin-bottom: 3.35rem
+        margin-bottom: 3rem
     &__button
-        margin-right: 20px
-        padding: 20px 33px
+        margin-right: 17px
+        padding: 19px 33px
+    
+    .button--outline
+        padding: 18px 46px
+
         
      
 
