@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("../Futura/FuturaBookC.woff") format("woff"), url("../fonts/Futura/FuturaBookC.woff2") format("woff");
+  src: url("../fonts/Futura/FuturaBookC.woff") format("woff"), url("../fonts/Futura/FuturaBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -658,6 +658,8 @@ img {
     font-weight: normal; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -669,6 +671,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     max-width: 36.36rem;
     position: relative;

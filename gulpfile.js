@@ -1,7 +1,7 @@
-var {src, dest, watch} = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+const {src, dest, watch} = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Static server
 function bs() {
