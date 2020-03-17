@@ -351,15 +351,15 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
-  .input::-webkit-input-placeholder {
+  .input--light::-webkit-input-placeholder {
     color: #ffffff; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #ffffff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #ffffff; }
-  .input::-ms-input-placeholder {
+  .input--light::-ms-input-placeholder {
     color: #ffffff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #ffffff; }
 
 .policy__checkbox {
@@ -423,6 +423,8 @@ img {
   text-align: center; }
   .section-title--left {
     text-align: left; }
+  .section-title--light {
+    color: #ffffff; }
   .section-title__heading {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursiv;
@@ -597,6 +599,9 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects {
+  padding-bottom: 25rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -646,6 +651,76 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -25rem; }
+  .control__section-title--light {
+    font-size: 1.428rem;
+    color: #ffffff;
+    margin-bottom: 11px; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: url("../img/video-mask.jpg") no-repeat center;
+  box-shadow: 0px 20px 50px rgba(19, 19, 19, 0.15); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.8); }
+
+.control__text {
+  max-width: 40.785rem;
+  font-size: 1.428rem;
+  line-height: 2.45rem;
+  margin: auto;
+  text-align: center; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 4.45rem;
+    margin-bottom: 1.9rem;
+    background-color: #E3B873;
+    width: 55px;
+    height: 2px;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 55rem;
+  margin-top: 4.3rem; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -5px; }
+
+.control__button {
+  padding: 1.3rem 4.76rem; }
+
+.control__policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  margin-top: 2.5rem; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types {
   padding: 50px 0px; }
