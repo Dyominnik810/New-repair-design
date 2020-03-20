@@ -347,7 +347,7 @@ template {
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
@@ -386,8 +386,10 @@ template {
 div.invalid {
   color: tomato; }
 
-input.invalid {
-  border-bottom: 1px solid tomato; }
+input {
+  color: #131313; }
+  input.invalid {
+    border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
@@ -715,6 +717,19 @@ img {
   flex-direction: column;
   flex-basis: 30%; }
 
+.control .input {
+  color: #131313; }
+  .control .input--dark::-webkit-input-placeholder {
+    color: #131313; }
+  .control .input--dark::-moz-placeholder {
+    color: #131313; }
+  .control .input--dark:-ms-input-placeholder {
+    color: #131313; }
+  .control .input--dark::-ms-input-placeholder {
+    color: #131313; }
+  .control .input--dark::placeholder {
+    color: #131313; }
+
 .control__label {
   margin-bottom: -5px; }
 
@@ -871,6 +886,8 @@ img {
     line-height: 0.6rem; }
     .footer__input-group--full-width {
       flex-basis: 100%; }
+    .footer__input-group .footer__input {
+      width: 100%; }
   .footer__policy {
     flex-basis: 100%;
     margin-top: -1.4rem;

@@ -57,7 +57,11 @@
                 minlength: 2,
                 maxlength: 15
             },
-            userPhone: "required",
+            userPhone: {
+                required: true,
+                minlength: 10,
+                maxlength: 10
+            },
             // правило объект (блок)
             userEmail: {
               required: true,
@@ -76,9 +80,44 @@
               email: "Введите корректный email: name@domain.com"
             }
         },
-
     });
 
     $(document).ready(function() {
-        $('[type=tel]').mask('+7(000) 000-00 00', {placeholder: "+7(000)-000-00-00"});
+        $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(000)-000-00-00"});
+});
+
+$(document).ready(function() {
+    var footer = $('.footer');
+        
+    $('.footer__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // строчное правило
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: {
+                required: true,
+                minlength: 10,
+                maxlength: 10
+            },
+           
+          }, //сообщения
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не больше 15 букв",
+            },
+            userPhone: {
+                required: "Заполните поле",
+                minlength: "Номер не короче 10 цифр",
+                maxlength: "Номер не больше 10 цифр",
+            },
+            
+        },
+    });
 });
