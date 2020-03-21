@@ -15,15 +15,10 @@
 
   $(document).ready(function () {
       var modal = $('.modal'),
-          footer = $('.footer'),
-          control = $('.control__form'),
           modalBtn = $('[data-toggle=modal]'),
           closeBtn = $('.modal__close');
-          policyCheckbox = $('.policy__checkbox')
 
-    /*policyCheckbox.on('click', function() {
-
-    })*/
+    
     
     modalBtn.on('click', function() {
         modal.toggleClass('modal--visible');
@@ -69,7 +64,7 @@
                 minlength: 16,
                 
             },
-            policyCheckbox: {
+            modalCheckbox: {
                 required: true
             },
             // правило объект (блок)
@@ -88,6 +83,9 @@
             userEmail: {
               required: "Заполните поле",
               email: "Введите корректный email: name@domain.com"
+            },
+            modalCheckbox: {
+                required: "Поставьте галочку"
             }
         },
     });
@@ -110,6 +108,9 @@ $('.footer__form').validate({
                 required: true,
                 minlength: 16
             },
+            footerCheckbox:{
+                required: true,
+            },
            
           }, //сообщения
         messages: {
@@ -123,6 +124,9 @@ $('.footer__form').validate({
                 minlength: "Номер не короче 10 цифр",
                 maxlength: "Номер не больше 10 цифр",
             },
+            footerCheckbox: {
+                required: "Поставьте галочку"
+            }
             
         },
     });
@@ -141,6 +145,9 @@ $('.footer__form').validate({
                 required: true,
                 minlength: 16
             },
+            controlCheckbox:{
+                required: true,
+            },
            
           }, //сообщения
         messages: {
@@ -154,6 +161,10 @@ $('.footer__form').validate({
                 minlength: "Номер не короче 10 цифр",
                 maxlength: "Номер не больше 10 цифр",
             },
+            controlCheckbox: {
+                required: "Поставьте галочку"
+            }
+            
             
         },
     });

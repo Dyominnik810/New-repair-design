@@ -204,18 +204,18 @@
                     На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
                 </p>
                 <form action="" class="form control__form">
-                    <div class="control__input-group">
+                    <div class="input-group control__input-group">
                         <label for="user-name" class="label form__label control__label" >Имя</label>
                         <input type="text" autocomplete="off" name="userName" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
                     </div>
-                    <div class="control__input-group">
+                    <div class="input-group control__input-group">
                         <label for="phone" class="label form__label control__label" >Телефон</label>
                         <input type="tel" autocomplete="off" name="userPhone" class="input form__input control__input input--dark" id="phone" placeholder="Ваш номер телефона:">    
                     </div>
                     <button class="button button--primary control__button">Отправить</button>
-                    <div class="policy control__policy">
-                        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                        <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                    <div class="policy control__input-group control__policy">
+                        <label for="control__policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                        <input type="checkbox" name="controlCheckbox" id="control__policy-checkbox" class="policy__checkbox" checked>
                     </div>
                     <!-- /.policy -->
                 </form>
@@ -490,9 +490,9 @@
                         <label for="user-question" class="label form__label label--light" >Вопрос</label>
                         <input type="question" autocomplete="off" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
                     </div>
-                    <div class="policy footer__policy">
-                        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                        <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+                    <div class="policy footer__input-group footer__policy">
+                        <label for="footer__policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+                        <input type="checkbox" name="footerCheckbox" id="footer__policy-checkbox" class="policy__checkbox" checked >
                     </div>
                     <!-- /.policy -->
                     <button class="button button--primary footer__button">Отправить</button>
@@ -550,9 +550,9 @@
                     <label for="user-email" class="label form__label label--light" >Email</label>
                     <input type="email" autocomplete="off" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш Email:">
                 </div>        
-                <div class="policy modal__policy">
-                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                    <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                <div class="policy modal__input-group modal__policy">
+                    <label for="modal__policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" name="modalCheckbox" id="modal__policy-checkbox" class="policy__checkbox" checked>
                 </div>
                 <!-- /.policy -->
                 <button class="button button--primary modal__button">Отправить заявку</button>
