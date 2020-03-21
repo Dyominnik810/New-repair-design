@@ -15,8 +15,15 @@
 
   $(document).ready(function () {
       var modal = $('.modal'),
+          footer = $('.footer'),
+          control = $('.control__form'),
           modalBtn = $('[data-toggle=modal]'),
           closeBtn = $('.modal__close');
+          policyCheckbox = $('.policy__checkbox')
+
+    /*policyCheckbox.on('click', function() {
+
+    })*/
     
     modalBtn.on('click', function() {
         modal.toggleClass('modal--visible');
@@ -59,8 +66,11 @@
             },
             userPhone: {
                 required: true,
-                minlength: 10,
-                maxlength: 10
+                minlength: 16,
+                
+            },
+            policyCheckbox: {
+                required: true
             },
             // правило объект (блок)
             userEmail: {
@@ -85,11 +95,8 @@
     $(document).ready(function() {
         $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(000)-000-00-00"});
 });
-
-$(document).ready(function() {
-    var footer = $('.footer');
-        
-    $('.footer__form').validate({
+   
+$('.footer__form').validate({
         errorElement: "div",
         errorClass: "invalid",
         rules: {
@@ -101,8 +108,7 @@ $(document).ready(function() {
             },
             userPhone: {
                 required: true,
-                minlength: 10,
-                maxlength: 10
+                minlength: 16
             },
            
           }, //сообщения
@@ -120,4 +126,34 @@ $(document).ready(function() {
             
         },
     });
-});
+
+    $('.control__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // строчное правило
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: {
+                required: true,
+                minlength: 16
+            },
+           
+          }, //сообщения
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не больше 15 букв",
+            },
+            userPhone: {
+                required: "Заполните поле",
+                minlength: "Номер не короче 10 цифр",
+                maxlength: "Номер не больше 10 цифр",
+            },
+            
+        },
+    });
