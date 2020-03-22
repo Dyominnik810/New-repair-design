@@ -134,6 +134,7 @@ $('.footer__form').validate({
     $('.control__form').validate({
         errorElement: "div",
         errorClass: "invalid",
+        
         rules: {
             // строчное правило
             userName: {

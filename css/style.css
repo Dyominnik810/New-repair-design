@@ -380,11 +380,9 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.615rem; }
-  .policy__label--center {
-    justify-content: center; }
 
 div.invalid {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   color: tomato; }
 
 input.invalid {
