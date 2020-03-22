@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/Futura/FuturaBookC.woff") format("woff"), url("../fonts/Futura/FuturaBookC.woff2") format("woff");
@@ -382,8 +383,29 @@ template {
     margin-right: 0.615rem; }
 
 div.invalid {
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   color: tomato; }
+
+div#footerCheckbox-error {
+  margin-top: 0.3 rem;
+  order: 2;
+  border-top: 1px solid tomato;
+  width: 100%;
+  padding-top: 0.2rem; }
+
+div#modalСheckbox-error {
+  margin-top: 0.3 rem;
+  order: 2;
+  border-top: 1px solid tomato;
+  width: 100%;
+  padding-top: 0.2rem; }
+
+div#controlCheckbox-error {
+  margin-top: 0.3 rem;
+  order: 2;
+  border-top: 1px solid tomato;
+  width: 34%;
+  padding-top: 0.2rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -793,7 +815,7 @@ img {
     line-height: 2.03rem;
     margin: 0 auto;
     font-size: 1.43rem;
-    font-wstyle: regular;
+    font-style: regular;
     font-family: 'Futura book', sans-serif;
     text-transform: none;
     margin-top: 1.7rem;

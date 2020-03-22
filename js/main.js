@@ -61,10 +61,10 @@
             },
             userPhone: {
                 required: true,
-                minlength: 16,
+                minlength: 17,
                 
             },
-            modalCheckbox: {
+            modalСheckbox: {
                 required: true
             },
             // правило объект (блок)
@@ -84,7 +84,7 @@
               required: "Заполните поле",
               email: "Введите корректный email: name@domain.com"
             },
-            modalCheckbox: {
+            modalСheckbox: {
                 required: "Поставьте галочку"
             }
         },
@@ -106,7 +106,7 @@ $('.footer__form').validate({
             },
             userPhone: {
                 required: true,
-                minlength: 16
+                minlength: 17
             },
             footerCheckbox:{
                 required: true,
@@ -144,7 +144,7 @@ $('.footer__form').validate({
             },
             userPhone: {
                 required: true,
-                minlength: 16
+                minlength: 17
             },
             controlCheckbox:{
                 required: true,
