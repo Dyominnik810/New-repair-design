@@ -910,6 +910,44 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem;
+    min-height: 465px;
+    max-width: 66.07rem;
+    margin: auto;
+    margin-bottom: 4.64rem; }
+  .footer .map__title {
+    display: flex;
+    padding: 0 3.57rem;
+    margin: auto;
+    max-width: 42.07rem;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 1.65rem;
+    color: #E3B873; }
+  .footer__contacts {
+    display: flex;
+    max-width: 5.07rem;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 3.12rem; }
+    .footer__contacts--button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: #E3B873;
+      border: none; }
+    .footer__contacts--image {
+      margin: auto; }
 
 .modal {
   opacity: 0;
